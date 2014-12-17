@@ -1,9 +1,8 @@
 import mock
 import unittest
-
 import pylast
-
-from mopidy import models
+from frontend import frontend_lib
+import models
 
 def init(self):
         self.config = {
