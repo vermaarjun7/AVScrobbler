@@ -1,4 +1,4 @@
-import avlogic
+from AVScrobbler import avlogic
 import scrobbler
 
 

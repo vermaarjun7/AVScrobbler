@@ -3,6 +3,7 @@ import unittest
 import pylast
 from frontend import frontend_lib
 import models
+import AVSrobbler.avlogic
 
 def init(self):
         self.config = {
