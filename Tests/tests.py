@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import mock
 import unittest
 import pylast
