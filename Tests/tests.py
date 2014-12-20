@@ -27,15 +27,15 @@ def test_on_start_creates_lastfm_network(self, pylast_mock):
             username='alice',
             password_hash=mock.sentinel.password_hash)
             
-            
+ #test for scrobble if music played for 240sec           
  def test_does_scrobble_if_played_not_half_but_240_sec(self, pylast_mock):
         self.frontend.lastfm = mock.Mock(spec=pylast.LastFMNetwork)
         track = models.Track(length=880432)
         tl_track = models.TlTrack(track=track, tlid=17)
-
+        #track playback ended.
         self.frontend.track_playback_ended(tl_track, 241432)
-
-        self.assertEqual(self.frontend.lastfm.scrobble.call_count, 1)
+        #Check for scrobble count.
+        self.assertEqual(self.frontend.lastfm.scrobble.call_count, 1) 
             
             
 
