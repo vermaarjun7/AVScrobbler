@@ -6,6 +6,16 @@ from frontend import frontend_lib
 import models
 import AVSrobbler.avlogic
 
+
+"""Tests for functionality of scrobbler
+    
+    AVScrobbler version 1.0
+    --------------
+    Passed: 3
+   
+"""
+
+
 def init(self):
         self.config = {
             'AVScrobbler': {
@@ -39,7 +49,7 @@ def test_on_start_creates_lastfm_network(self, pylast_mock):
         self.assertEqual(self.frontend.lastfm.scrobble.call_count, 1) 
             
             
-
+#test for scrobble if music played less than 30 seconds
 def test_does_not_scrobble_tracks_shorter_than_30_sec(self, pylast_mock):
         self.frontend.lastfm = mock.Mock(spec=pylast.LastFMNetwork)
         track = models.Track(length=20432)
