@@ -11,7 +11,8 @@ import AVSrobbler.avlogic
     
     AVScrobbler version 1.0
     --------------
-    Passed: 3
+    Passed: 
+    Failed:
    
 """
 
@@ -59,8 +60,8 @@ def test_does_not_scrobble_tracks_shorter_than_30_sec(self, pylast_mock):
         self.assertEqual(self.frontend.lastfm.scrobble.call_count, 0)
         
         
-        
-  def test_does_not_scrobble_if_played_less_than_half(self, pylast_mock):
+#test for scrobble if music less than half of track time        
+def test_does_not_scrobble_if_played_less_than_half(self, pylast_mock):
         self.frontend.lastfm = mock.Mock(spec=pylast.LastFMNetwork)
         track = models.Track(length=180432)
         tl_track = models.TlTrack(track=track, tlid=17)
