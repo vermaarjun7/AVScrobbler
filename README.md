@@ -9,3 +9,11 @@ Simple last.fm scrobbler (API 2.0)
 For using this app you'll need 2 keys: API key & secret key.<br/>
 http://www.last.fm/api/account/create
 
+###Repository contains
+
+1.Tests directory - a python script which include all the tests of AVScrobbler
+
+2.avlogic 
+
+3. main
+ 
