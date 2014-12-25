@@ -11,9 +11,12 @@ http://www.last.fm/api/account/create
 
 ###Repository contains
 
-1.Tests directory - a python script which include all the tests of AVScrobbler
+1.Tests directory - Includes all the tests of AVScrobbler
 
-2.avlogic 
+2.avlogic
 
-3.main
+3.main 
+
+
+
  
