@@ -1,3 +1,11 @@
+"""
+AVlogic.py
+
+Includes all the functions(authentication and submit)
+
+"""
+
+
 import hashlib
 import requests
 import time
