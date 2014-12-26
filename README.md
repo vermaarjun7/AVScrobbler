@@ -13,9 +13,9 @@ http://www.last.fm/api/account/create
 
 1.Tests directory - Includes all the tests of AVScrobbler
 
-2.avlogic
+2.avlogic - user auth and login implementaion
 
-3.main 
+3.main - driver function
 
 
 
