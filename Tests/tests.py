@@ -13,6 +13,7 @@ import AVSrobbler.avlogic
     --------------
     Passed: 
     Failed:
+    Skipped:
    
 """
 
