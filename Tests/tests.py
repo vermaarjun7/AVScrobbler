@@ -7,12 +7,13 @@ import models
 import AVSrobbler.avlogic
 
 
-"""Tests for functionality of scrobbler
+"""Tests for functionality of AVScrobbler
     
     AVScrobbler version 1.0
     --------------
     Passed: 
     Failed:
+    Skipped:
    
 """
 
