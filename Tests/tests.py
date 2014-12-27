@@ -7,7 +7,7 @@ import models
 import AVSrobbler.avlogic
 
 
-"""Tests for functionality of AVscrobbler
+"""Tests for functionality of scrobbler
     
     AVScrobbler version 1.0
     --------------
