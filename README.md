@@ -2,7 +2,7 @@ AVScrobbler
 ===========
 
 
-Simple last.fm scrobbler (API 2.0)
+ A Simple last.fm scrobbler (API 2.0)
 
 ###Requirements###
 * You need an API account, which includes an API key, to use the Last.fm Web Services.<br/>
