@@ -55,7 +55,7 @@ def test_on_start_creates_lastfm_network(self, pylast_mock):
 def test_does_not_scrobble_tracks_shorter_than_30_sec(self, pylast_mock):
         self.frontend.lastfm = mock.Mock(spec=pylast.LastFMNetwork)
         track = models.Track(length=20432)
-        
+        #track playback ended.
         tl_track = models.TlTrack(track=track, tlid=17)
         self.frontend.track_playback_ended(tl_track, 20432)
         self.assertEqual(self.frontend.lastfm.scrobble.call_count, 0)
@@ -66,9 +66,9 @@ def test_does_not_scrobble_if_played_less_than_half(self, pylast_mock):
         self.frontend.lastfm = mock.Mock(spec=pylast.LastFMNetwork)
         track = models.Track(length=180432)
         tl_track = models.TlTrack(track=track, tlid=17)
-
+		#track playback ended.
         self.frontend.track_playback_ended(tl_track, 60432)
-
+		#Check for scrobble count.
         self.assertEqual(self.frontend.lastfm.scrobble.call_count, 0)
         
         
