@@ -4,8 +4,8 @@ AVlogic.py
 Includes all the functions(authentication and submit)
 
 """
-
-
+import sys
+import os
 import hashlib
 import requests
 import time
